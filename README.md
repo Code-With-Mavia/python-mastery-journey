@@ -8,8 +8,8 @@
 ![Stars](https://img.shields.io/github/stars/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
 ![License](https://img.shields.io/github/license/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
 ![Last Commit](https://img.shields.io/github/last-commit/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
-
-
+![Issues](https://img.shields.io/github/issues/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
+![Forks](https://img.shields.io/github/forks/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
 
 
 ---
