@@ -9,7 +9,6 @@
 ![MIT License](https://img.shields.io/github/license/Code-With-Mavia/python-mastery-journey?style=flat-square)
 ![Last Commit](https://img.shields.io/github/last-commit/Code-With-Mavia/python-mastery-journey?style=flat-square)
 
-> 🔄 *Replace `Code-With-Mavia` with your GitHub username above to activate badges.*
 
 ---
 
