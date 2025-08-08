@@ -3,10 +3,6 @@
 This problem set is designed to test your understanding of **Python variables and data types** — nothing else.
 
 ---
-![Repo Size](https://img.shields.io/github/repo-size/Code-With-Mavia/python-mastery-journey)
-![Forks](https://img.shields.io/github/forks/Code-With-Mavia/python-mastery-journey?style=social)
-![Issues](https://img.shields.io/github/issues/Code-With-Mavia/python-mastery-journey)
-
 
 ## 📘 Problem List
 
