@@ -128,11 +128,14 @@ Contributions are welcome via pull request or discussions.
 
 ## 🧑‍💻 Author
 
-**Maawiah Qaiser**
-🎯 Backend Developer in training
-🚀 Learning Python by doing, building, and sharing
-🌐 [GitHub](https://github.com/your-username](https://github.com/Code-With-Mavia)
-🔗 *(Optional)* Add your LinkedIn or personal site
+**Maawiah Qaiser**  
+🎯 Backend Developer in training  
+🚀 Learning Python by doing, building, and sharing  
+
+- 🌐 GitHub: https://github.com/Code-With-Mavia
+- 💼 LinkedIn: https://www.linkedin.com/in/maawiah-qaiser-10793722b/
+- 🧭 Portfolio: https://personal-portfolio-alpha-navy-59.vercel.app/
+
 
 ---
 
@@ -150,9 +153,3 @@ You are free to use, modify, and share — just give credit. 🙏
 > If you’re learning Python and want to see how someone else is doing it from scratch — welcome aboard.
 
 ---
-
-```
-
----
-
-```
