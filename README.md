@@ -11,7 +11,6 @@
 ![Issues](https://img.shields.io/github/issues/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
 ![Forks](https://img.shields.io/github/forks/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
 
-
 ---
 
 ## 🎨 Banner
