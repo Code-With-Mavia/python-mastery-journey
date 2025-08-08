@@ -2,11 +2,6 @@
 
 This problem set is designed to test your understanding of **Python variables and data types** — nothing else.
 
-> ⚠️ Restrictions:
-> - ❌ No loops, no conditionals
-> - ❌ No lists, dicts, sets, or functions
-> - ✅ Only: `int`, `float`, `str`, `bool`, type casting, and expressions
-
 ---
 
 ## 📘 Problem List
