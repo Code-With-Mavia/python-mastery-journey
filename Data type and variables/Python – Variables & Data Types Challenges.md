@@ -3,6 +3,11 @@
 This problem set is designed to test your understanding of **Python variables and data types** — nothing else.
 
 ---
+![Repo Size](https://img.shields.io/github/repo-size/yourusername/python-variable-datatype-challenges)
+![Forks](https://img.shields.io/github/forks/yourusername/python-variable-datatype-challenges?style=social)
+![Stars](https://img.shields.io/github/stars/yourusername/python-variable-datatype-challenges?style=social)
+![Issues](https://img.shields.io/github/issues/yourusername/python-variable-datatype-challenges)
+
 
 ## 📘 Problem List
 
