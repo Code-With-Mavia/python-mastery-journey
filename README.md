@@ -4,10 +4,11 @@
 
 ---
 
-![Repo Size](https://img.shields.io/github/repo-size/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=10)
-![Stars](https://img.shields.io/github/stars/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=10)
-![License](https://img.shields.io/github/license/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=10)
-![Last Commit](https://img.shields.io/github/last-commit/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=10)
+![Repo Size](https://img.shields.io/github/repo-size/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
+![Stars](https://img.shields.io/github/stars/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
+![License](https://img.shields.io/github/license/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
+![Last Commit](https://img.shields.io/github/last-commit/Code-With-Mavia/python-mastery-journey?style=flat-square&cacheSeconds=5)
+
 
 
 
