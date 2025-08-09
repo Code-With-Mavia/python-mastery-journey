@@ -32,7 +32,14 @@ This repository is my personal Python learning lab — where I write, test, brea
 Whether you're a beginner starting from zero, or someone brushing up on fundamentals, this repo is made to grow with you — step by step, file by file.
 
 ---
+---
 
+> ⚠️ **Disclaimer**  
+> Some folders for specific topics in this repository contain **PDF notes from Apna College**.  
+> These notes are **not my original work** — they are included here **only for educational reference** while I learn Python.  
+> All rights and credit for those PDFs go to **Apna College**.  
+
+---
 ## 🧠 Topics Covered
 
 This repository will gradually cover a wide range of Python topics, including but not limited to:
