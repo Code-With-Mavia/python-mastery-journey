@@ -588,3 +588,465 @@ a=set()
 a={('float', 9.0),('int', 9)}
 print(type(a))
 print(a)
+
+# 1. Nested Conditional Dictionary Lookup
+# You have the dictionary:
+
+
+# students = {
+#     "Ali": {"marks": 85, "grade": "A"},
+#     "Sara": {"marks": 72, "grade": "B"},
+#     "Omar": {"marks": 50, "grade": "C"}
+# }
+# Question:
+# Write a program that takes a student's name as input.
+
+# If the student exists,
+
+# If marks ≥ 80 → print "Excellent"
+
+# If marks between 60–79 → print "Good"
+
+# Else → print "Needs Improvement"
+
+# If the student doesn’t exist → print "Student not found"
+
+students = {
+    "Ali": {"marks": 85, "grade": "A"},
+    "Sara": {"marks": 72, "grade": "B"},
+    "Omar": {"marks": 50, "grade": "C"}
+}
+
+name=input("Enter your name : ").title()
+if name in students:
+    marks=students[name]['marks']
+    if marks>=80 :
+        print("Excellent")
+    elif 70<=marks>=60:
+        print("Good")
+    else:
+        print("Needs Improvement")
+else:
+    print("Student not found")
+    
+# 2. Type & Key Existence Check
+# You have:
+
+
+# data = {
+#     "user_id": 101,
+#     "is_active": True,
+#     "role": "admin"
+# }
+# Question:
+# Take a key name as input.
+
+# If the key exists in data:
+
+# If its value is str, print "This is text data"
+
+# If its value is int, print "This is a number"
+
+# If its value is bool, print "This is a boolean"
+
+# Else → print "Invalid key"
+
+user = {
+    "name": "Ali",      # string
+    "age": 25,          # integer
+    "active": True,     # boolean
+    "role": "Admin"     # string
+}
+
+
+key=input("Enter your key : ")
+if key in user:
+    value = user[key]
+    if type(value)==str:
+        print("This is text data")
+    elif type(value)==int:
+        print("This is a number")
+    elif type(value)==bool:
+        print("This is a boolean")
+else:
+    print("Invalid key")
+    
+
+
+# 3. Nested Keys with Conditional Access
+# Problem:
+# Check if the user’s plan matches and see if renewal is needed.
+
+# Input Format:
+
+# First line: Plan type (string)
+
+# Constraints:
+# user_plan = {
+#     "plan": "premium",
+#     "expiry_days": 3
+# }
+# Plan type is case-sensitive.
+
+# Output Format:
+
+# "Renew soon!" if matching type and expiry_days ≤ 5
+
+# "Your plan is active" if matching and expiry_days > 5
+
+# "Plan mismatch" otherwise
+
+# Sample Input:
+
+
+# premium
+# Sample Output:
+
+# Renew soon!
+
+user_plan = {
+    "plan": "premium",
+    "expiry_days": 3
+}
+
+plan_type = input()
+
+if plan_type == user_plan["plan"]:
+    if user_plan["expiry_days"] <= 5:
+        print("Renew soon!")
+    else:
+        print("Your plan is active")
+else:
+    print("Plan mismatch")
+
+# 4. Multi-Dictionary Condition
+# Problem:
+# Given two users' info, take a username as input.
+
+# If name matches user1 and online is True → "User1 is active"
+
+# Else if name matches user2 and online is True → "User2 is active"
+
+# Else → "User is either offline or does not exist"
+
+# Given Dictionary:
+
+# users = {
+#     "user1": {"name": "Ali", "online": True},
+#     "user2": {"name": "Sara", "online": False}
+# }
+# Sample Input:
+# Ali
+# Sample Output:
+# User1 is active
+
+users = {
+    "user1": {"name": "Ali", "online": True},
+    "user2": {"name": "Sara", "online": False}
+}
+
+username=input().title()
+
+if username == users["user1"]["name"] and users["user1"]["online"] == True:
+    print("User1 is active")
+elif username == users["user2"]["name"] and users["user2"]["online"] == True:
+    print("User2 is active")
+else:
+    print("User is either offline or does not exist")
+
+# 5. Conditional Merge Without Loops
+# Problem:
+# Take "yes" or "no" as input.
+
+# If yes → print combined dictionary of dict1 and dict2
+
+# If no → print dict1
+
+# Given:
+# dict1 = {"name": "Ali", "city": "Lahore"}
+# dict2 = {"age": 25, "job": "Engineer"}
+# Sample Input:
+# yes
+# Sample Output:
+# {'name': 'Ali', 'city': 'Lahore', 'age': 25, 'job': 'Engineer'}
+
+dict1 = {"name": "Ali", "city": "Lahore"}
+dict2 = {"age": 25, "job": "Engineer"}
+
+info=input("Yes/No: ").title()
+
+if info=='Yes':
+    #these are 3 methods 
+    #dict1.update(dict2)
+    #info={**dict1,**dict2}
+    info=dict1 | dict2
+    print(info)
+else:
+    print(dict1)
+
+# 6. Deep Nested Value Check
+# Problem:
+# If phone is None → "No phone number" else → "Phone available"
+
+# Given:
+# contact = {
+#     "email": "ali@example.com",
+#     "phone": None
+# }
+# Sample Output:
+# No phone number
+
+contact = {
+    "email": "ali@example.com",
+    "phone": None
+}
+if contact["phone"]==None:
+    print("No phone number")
+else:
+    print("Phone available")
+
+# 7. Value Comparison Between Two Dictionaries
+# Problem:
+# Compare price of order1 and order2.
+
+# If equal → "Same price"
+
+# If order1 > order2 → "Order1 is expensive"
+
+# Else → "Order2 is expensive"
+
+# Given:
+# order1 = {"item": "Laptop", "price": 1000}
+# order2 = {"item": "Laptop", "price": 950}
+# Sample Output:
+# Order1 is expensive
+
+order1 = {"item": "Laptop", "price": 100}
+order2 = {"item": "Laptop", "price": 100}
+
+if order1["price"]==order2["price"]:
+    print("Same price")
+elif order1["price"] > order2["price"]:
+    print("Order1 is expensive")
+else:
+    print("Order2 is expensive")
+
+# 8. Multiple Type Validation
+# Problem:
+# Take a key as input.
+
+# If not in dictionary → "Invalid key"
+
+# If boolean → "Boolean value"
+
+# If int → "Number value"
+
+# If string → "Text value"
+
+# Given:
+# settings = {
+#     "theme": "dark",
+#     "notifications": True,
+#     "max_users": 50
+# }
+# Sample Input:
+# notifications
+
+# Sample Output:
+# Boolean value
+
+settings = {
+    "theme": "dark",
+    "notifications": True,
+    "max_users": 50
+}
+key=input()
+value=settings[key]
+if type(value)==str:
+    print("Text value")
+elif type(value)==bool:
+    print("Boolean value")
+elif type(value)==int:
+    print("Number value")
+else:
+    print("Invalid key")
+
+
+# 9. Nested Data Type Decision
+# Problem:
+# If debug is True → "Debug mode on"
+# Else → "Debug mode off" and print server ip and port.
+
+# Given:
+# config = {
+#     "server": {"ip": "192.168.1.1", "port": 8080},
+#     "debug": False
+# }
+# Sample Output:
+# Debug mode off
+# 192.168.1.1 8080
+
+config = {
+    "server": {"ip": "192.168.1.1", "port": 8080},
+    "debug": False
+}
+
+if config["debug"]==True:
+    print("Debug mode on")
+else:
+    print(f"Debug mode off and your ip is {config['server']['ip']}  and port is {config['server']['port']}")
+
+# 10. Dictionary Switch Based on Condition
+# Problem:
+# Take "vip" or "guest" as input.
+# If vip → print vip dict.
+# If guest → print guest dict.
+# Else → "Invalid type"
+
+# Given:
+# vip = {"name": "Ali", "access": "full"}
+# guest = {"name": "Sara", "access": "limited"}
+# Sample Input:
+# guest
+# Sample Output:
+# {'name': 'Sara', 'access': 'limited'}
+
+vip = {"name": "Ali", "access": "full"}
+guest = {"name": "Sara", "access": "limited"}
+
+status=input()
+if status=='vip':
+    print(vip)
+elif status=='guest':
+    print(guest)
+else:
+    print("wrong entry")
+    
+    
+# 11. Two-Level Nested Check
+# Problem:
+# If department location is "Building A" → "Same building" else "Different building"
+
+# Given:
+# employee = {
+#     "id": 101,
+#     "department": {"name": "IT", "location": "Building A"}
+# }
+# Sample Output:
+# Same building
+
+employee = {
+    "id": 101,
+    "department": {"name": "IT", "location": "Building A"}
+}
+
+if employee["department"]['location']=="Building A":
+    print("Same building")
+else:
+    print("Different building")
+
+
+# 12. Mixed Data Match
+# Problem:
+# Take product name as input.
+
+# If not available → "Out of stock"
+
+# If available → print "Price is X"
+
+# Given:
+# products = {
+#     "Laptop": {"available": True, "price": 1200},
+#     "Phone": {"available": True, "price": 500}
+# }
+# Sample Input:
+# Laptop
+# Sample Output:
+# Price is 1200
+
+products = {
+    "Laptop": {"available": True, "price": 1200},
+    "Phone": {"available": False, "price": 500}
+}
+product_name=input().title()
+if product_name in products:
+    if products[product_name]['available']==True:
+        print(f"Price is {products[product_name]['price']}")
+    else:
+        print("Out of stock")
+else:
+    print("Product doesnt exist")
+
+
+# 13. Conditional Overwrite
+# Problem:
+# If score ≥ 80 → change status to "approved" and print dict
+# Else → "Not approved"
+
+# Given:
+# record = {"status": "pending", "score": 85}
+# Sample Output:
+# {'status': 'approved', 'score': 85}
+
+record = {"status": "pending", "score": 85}
+
+score=record["score"]
+if score>=80:
+    record["status"]='approved'
+    print(record)
+else:
+    record["status"]='Not approved'
+    print(record)
+
+# 14. Compare Nested Key Values
+# Problem:
+# Compare math grades.
+
+# If equal → "Same marks"
+
+# If student1 > student2 → "Student1 scored higher"
+
+# Else → "Student2 scored higher"
+
+# Given:
+# student1 = {"name": "Ali", "grades": {"math": 90}}
+# student2 = {"name": "Sara", "grades": {"math": 85}}
+# Sample Output:
+
+# Student1 scored higher
+
+# student1 = {"name": "Ali", "grades": {"math": 90}}
+# student2 = {"name": "Sara", "grades": {"math": 115}}
+
+# if student1["grades"]['math']==student2["grades"]['math']:
+#     print("Same marks")
+# elif student1["grades"]['math'] >= student2["grades"]['math']:
+#     print("Student1 scored higher")
+# else:
+#    print("Student2 scored higher") 
+
+# 15. Triple Condition Access
+# Problem:
+# If vehicle type is "Car" and year ≥ 2022 and is_new is True → "Latest model" else "Old model"
+
+# Given:
+# vehicle = {
+#     "type": "Car",
+#     "brand": "Toyota",
+#     "year": 2022,
+#     "is_new": True
+# }
+# Sample Output:
+# Latest model
+
+vehicle = {
+    "type": "Car",
+    "brand": "Toyota",
+    "year": 2022,
+    "is_new": True
+}
+
+if vehicle["type"]=='Car' and vehicle["year"]>=2022 and vehicle["is_new"]==True:
+    print("Latest model")
+else:
+    print("Old model")
