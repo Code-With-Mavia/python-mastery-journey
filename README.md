@@ -96,14 +96,17 @@ Every file includes:
 
 ---
 
-## 📌 Milestones
+## 📌 Milestones  
 
-* ✅ Master data types and conversions
-* ✅ Practice arithmetic, logic, and conditions
-* 🔄 Explore Python collections deeply
-* 🔜 Dive into functions and advanced I/O
-* ⏳ Build beginner-friendly projects using all learned concepts
-* 🧠 Keep experimenting, debugging, and journaling in code
+- [x] Mastered **Python Data Types & Type Conversions** (int, float, str, bool)  
+- [x] Worked with **Strings** (indexing, slicing, methods, formatting)  
+- [x] Explored **Lists, Tuples, Sets, and Dictionaries** (creation, access, update, iteration)  
+- [x] Practiced **Conditionals** (`if`, `elif`, `else`, nested conditions)  
+- [x] Built confidence with **Loops** (`for`, `while`, nested loops, `break`, `continue`)  
+- [ ] Currently practicing **Functions** (definitions, parameters, return values, loops inside functions)  
+- [ ] Next: Intermediate/Advanced functions (default args, keyword args, recursion, lambda) + advanced I/O  
+- [ ] Upcoming: Beginner-friendly projects combining all concepts  
+- [ ] Ongoing habit: Experimenting, debugging, and documenting progress in code  
 
 ---
 
